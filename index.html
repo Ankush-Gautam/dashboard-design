@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div class="grid-container">
-      <!-- SIDEBAR  -->
+      <!-- ===================================================================
+      SIDEBAR -contains navigation icons
+      ========================================================================-->
       <div class="sidebar">
         <h2 class="sidebar-title">
           <img class="icon" src="assets/view-dashboard.svg" alt="" />Dashboard
@@ -74,28 +77,35 @@
         </div>
       </div>
 
-      <!-- HEADER  -->
+      <!-- ===================================================================
+      HEADER -contains profile, searchbar
+      ========================================================================-->
       <div class="header">
-        <div class="header-top">
-          <div class="header-search">
+       
+        <div class="header--top d-flex">
+          <div class="header-search d-flex">
             <img class="icon" src="assets/magnify.svg" alt="" />
-            <input type="text" name="search" placeholder="Search" />
+            <input type="text" name="search" placeholder="Search" class="search-bar" />
           </div>
-          <div class="header-profile">
+
+          <div class="header--profile d-flex">
             <a href="#">
               <img class="icon" src="assets/bell-ring-outline.svg" alt="" />
             </a>
-            <a href="#">
-              The Ag
-              <img class="icon" src="assets/profile.jpg" alt="" />
+            <a href="#" class="d-flex">
+              <strong class="profile-name">The Ag</strong>
+              <img class="profile-icon" src="assets/profile.jpg" alt="" />
             </a>
           </div>
         </div>
 
-        <div class="header-menu">
-          <div class="header-menu-welcome">
-            <img src="assets/profile.jpg" alt="" class="icon" />
-            The Ag (@theag)
+        <div class="header--menu d-flex">
+          <div class="header-menu-welcome d-flex">
+            <img src="assets/profile.jpg" alt="" class="profile-icon" />
+            <div class="header-menu--sayhi">
+              <p>Hi there,</p>
+              <p><strong class="profile-name">The Ag (@theag)</strong></p>
+            </div>
           </div>
 
           <div class="header-menu-btns">
@@ -106,146 +116,163 @@
         </div>
       </div>
 
-      <!-- PROJECTS  -->
-      <div class="projects">
-        <h2>Your Project</h2>
-        <div class="projects-container">
-          <div class="card">
-            <p class="card-title">Super Cool Project</p>
-            <p class="card-descrip">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              alias nihil nobis dolore molestias corporis?
-            </p>
+      <!-- ===================================================================
+      MAIN-CONTENT -contains projects, announcements, trending
+      ========================================================================-->
+      <div class="main-content">
 
-            <div class="card-btns">
-              <button>
-                <img class="icon" src="assets/star-plus-outline.svg" alt="" />
-              </button>
+          <div class="main-content--projects">
+            
+            <div class="card">
+              <p class="card-title">Super Cool Project</p>
+              <p class="card-descrip">
+                
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                alias nihil nobis dolore molestias corporis?
+              </p>
+              <div class="card-btns">
+                <button>
+                  <img class="icon" src="assets/star-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img src="assets/source-branch.svg" alt="" class="icon" />
+                </button>
+              </div>
+            </div>
 
-              <button>
-                <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
-              </button>
+            <div class="card">
+              <p class="card-title">Less Cool Project</p>
+              <p class="card-descrip">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                alias nihil nobis dolore molestias corporis?
+              </p>
+              <div class="card-btns">
+                <button>
+                  <img class="icon" src="assets/star-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img src="assets/source-branch.svg" alt="" class="icon" />
+                </button>
+              </div>
+            </div>
 
-              <button>
-                <img src="assets/source-branch.svg" alt="" class="icon" />
-              </button>
+            <div class="card">
+              <p class="card-title">Impossible App</p>
+              <p class="card-descrip">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                alias nihil nobis dolore molestias corporis?
+              </p>
+              <div class="card-btns">
+                <button>
+                  <img class="icon" src="assets/star-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img src="assets/source-branch.svg" alt="" class="icon" />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <p class="card-title">Easy Peasy App</p>
+              <p class="card-descrip">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                alias nihil nobis dolore molestias corporis?
+              </p>
+              <div class="card-btns">
+                <button>
+                  <img class="icon" src="assets/star-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img src="assets/source-branch.svg" alt="" class="icon" />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <p class="card-title">Ad Blocker</p>
+              <p class="card-descrip">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                alias nihil nobis dolore molestias corporis?
+              </p>
+              <div class="card-btns">
+                <button>
+                  <img class="icon" src="assets/star-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img src="assets/source-branch.svg" alt="" class="icon" />
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <p class="card-title">Money Maker</p>
+              <p class="card-descrip">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                alias nihil nobis dolore molestias corporis?
+              </p>
+              <div class="card-btns">
+                <button>
+                  <img class="icon" src="assets/star-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
+                </button>
+                <button>
+                  <img src="assets/source-branch.svg" alt="" class="icon" />
+                </button>
+              </div>
+            </div> 
+
+          </div>
+
+   
+          <div class="main-content--announcements">
+              <div class="article1">
+                <strong>Site Maintenance</strong>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, natus.</p>
+              </div>
+  
+              <div class="article2">
+                <strong>Community Share Day</strong>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, natus.</p>
+              </div>
+              
+              <div class="article3">
+                <strong>Updated Privacy Policy</strong>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, natus.</p>
+              </div>
+ 
+          </div>
+
+
+          <div class="main-content--trending">
+              <div class="profile-card">
+                <img src="assets/profile.jpg" alt="" class="profile-icon">
+                <div class="profile-card--info">
+                  <p>@theag</p>
+                  <p>Super Cool projects</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <p class="card-title">Super Cool Project</p>
-            <p class="card-descrip">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              alias nihil nobis dolore molestias corporis?
-            </p>
-
-            <div class="card-btns">
-              <button>
-                <img class="icon" src="assets/star-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img src="assets/source-branch.svg" alt="" class="icon" />
-              </button>
-            </div>
-          </div>
-
-          <div class="card">
-            <p class="card-title">Super Cool Project</p>
-            <p class="card-descrip">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              alias nihil nobis dolore molestias corporis?
-            </p>
-
-            <div class="card-btns">
-              <button>
-                <img class="icon" src="assets/star-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img src="assets/source-branch.svg" alt="" class="icon" />
-              </button>
-            </div>
-          </div>
-
-          <div class="card">
-            <p class="card-title">Super Cool Project</p>
-            <p class="card-descrip">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              alias nihil nobis dolore molestias corporis?
-            </p>
-
-            <div class="card-btns">
-              <button>
-                <img class="icon" src="assets/star-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img src="assets/source-branch.svg" alt="" class="icon" />
-              </button>
-            </div>
-          </div>
-
-          <div class="card">
-            <p class="card-title">Super Cool Project</p>
-            <p class="card-descrip">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              alias nihil nobis dolore molestias corporis?
-            </p>
-
-            <div class="card-btns">
-              <button>
-                <img class="icon" src="assets/star-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img src="assets/source-branch.svg" alt="" class="icon" />
-              </button>
-            </div>
-          </div>
-
-          <div class="card">
-            <p class="card-title">Super Cool Project</p>
-            <p class="card-descrip">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-              alias nihil nobis dolore molestias corporis?
-            </p>
-
-            <div class="card-btns">
-              <button>
-                <img class="icon" src="assets/star-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img class="icon" src="assets/eye-plus-outline.svg" alt="" />
-              </button>
-
-              <button>
-                <img src="assets/source-branch.svg" alt="" class="icon" />
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
 
-      <!-- ASIDE  -->
-      <div class="aside"></div>
     </div>
   </body>
 </html>
