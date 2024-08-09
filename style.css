@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 /* ===================================================================
   Universal Style
   =================================================================== */
@@ -12,10 +11,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  margin: 0 auto;
-}
-
 a {
   color: lightgray;
   text-decoration: none;
@@ -23,25 +18,29 @@ a {
   font-size: 1.05rem;
 }
 
+h2 {
+  margin-bottom: 0.5rem;
+}
+
 a:hover {
-  opacity: .8;
+  opacity: 0.8;
   text-decoration: underline;
 }
 
 button:hover {
-  opacity: .5;
-  transition: .5ms linear;
+  opacity: 0.5;
+  transition: 0.5ms linear;
 }
 
 button:active {
-  scale: .9;
+  scale: 0.9;
 }
 
 .search-bar {
   background-color: rgb(245, 245, 245);
   border: none;
-  padding: .4rem;
-  border-radius: .8rem;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
   width: 100%;
   max-width: 500px;
 }
@@ -56,7 +55,6 @@ ul > li {
   margin-bottom: 1.5rem;
 }
 
-
 /* ===================================================================
  * GROUP-STYLES
  * =================================================================== 
@@ -65,9 +63,9 @@ ul > li {
 .icon {
   width: 25px;
   height: px;
-  margin-right: .6rem;
+  margin-right: 0.6rem;
+  fill: white;
 }
-
 
 .d-flex {
   display: flex;
@@ -78,8 +76,9 @@ ul > li {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-left: .6rem;
+  margin-left: 0.6rem;
 }
+
 .d-flex {
   display: flex;
   align-items: center;
@@ -89,13 +88,14 @@ ul > li {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-left: .6rem;
+  margin-left: 0.6rem;
 }
 
-.sidebar, .header , .main-content {
-  padding: 1rem;
+.sidebar,
+.header,
+.main-content {
+  padding: 0.5rem 1.2rem;
 }
-
 
 /* ===================================================================
  * GRID CONTAINER
@@ -103,12 +103,11 @@ ul > li {
 */
 
 .grid-container {
-  height: 100vh;
+  height: 100dvh;
   display: grid;
   grid-template-columns: 250px 1fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 6fr;
 }
-
 
 /* ===================================================================
  *  SIDEBAR
@@ -116,10 +115,15 @@ ul > li {
 */
 
 .sidebar {
-  background: linear-gradient(45deg, rgb(79, 132, 231), rgba(115, 148, 254, 0.951),  rgb(90, 125, 231));
+  background: linear-gradient(
+    45deg,
+    rgb(35, 101, 224),
+    rgba(82, 108, 192, 0.951),
+    rgb(68, 108, 230)
+  );
   grid-area: 1/1/-1/2;
   display: grid;
-  grid-template: .2fr 1fr 1fr / 1fr;
+  grid-template: 0.2fr 1fr 1fr / 1fr;
   align-items: flex-start;
   gap: 1rem;
 }
@@ -127,8 +131,9 @@ ul > li {
 .sidebar-title {
   display: flex;
   align-items: center;
+  color: white;
+  letter-spacing: 0.1rem;
 }
-
 
 /* ===================================================================
  *  HEADER
@@ -137,29 +142,35 @@ ul > li {
 
 .header {
   background-color: white;
-  box-shadow: 0px 10px 15px -3px rgba(15, 15, 15, 0.1);
+  box-shadow: 1px 10px 15px 5px rgba(15, 15, 15, 0.1);
   display: grid;
-  grid-template: repeat(2,1fr) / 1fr;
-  padding-left: 1rem;
+  grid-template: repeat(2, 1fr) / 1fr;
+  padding-left: 1.2rem;
 }
 
-.header  button {
+.header button {
   font-weight: 600;
   cursor: pointer;
   color: white;
   border: none;
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 1.1rem;
-  background: linear-gradient(45deg, rgb(79, 132, 231), rgba(115, 148, 254),  rgb(90, 125, 231));
+  background: linear-gradient(
+    45deg,
+    rgb(79, 132, 231),
+    rgba(115, 148, 254),
+    rgb(90, 125, 231)
+  );
   margin-left: 1.2rem;
 }
 
- .header--top, .header--menu {
+.header--top,
+.header--menu {
   justify-content: space-between;
 }
 
 .header-search {
-  padding-left: .6rem;
+  padding-left: 0.6rem;
   flex: 2;
 }
 
@@ -169,7 +180,7 @@ ul > li {
 }
 
 .profile-name {
-  margin: 0 .4rem;
+  margin: 0 0.4rem;
 }
 
 .header-menu--sayhi {
@@ -190,36 +201,36 @@ ul > li {
   background-color: rgb(237, 237, 237);
   display: inline-grid;
   grid-template: 1fr 1fr / 3fr 1fr;
-  gap: .8rem;
+  gap: 0.8rem;
 }
 
 .main-content > div {
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
 
 .main-content--projects {
   grid-area: 1/1/-1/2;
-  display: grid;
-  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
- 
+  display: inline-grid;
+  grid-template: repeat(3, auto) / repeat(2, 1fr);
 }
 
-.main-content--announcements, .main-content--trending{
+.main-content--announcements,
+.main-content--trending {
   background-color: white;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   font-size: 80%;
 }
 
 .card {
   background-color: white;
-  border-radius:.6rem;
-  padding: .6rem;
-  margin: .6rem;  
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-  padding: 2rem;
-  font-size: 90%;
+  border-radius: 0.6rem;
+  padding: 2rem 0.6rem 0.6rem 2rem;
+  margin: 0.6rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-left: 10px solid rgb(255, 205, 5);
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title {
@@ -233,16 +244,46 @@ ul > li {
 
 .card-btns {
   text-align: right;
+  margin-top: auto;
 }
 
 .card-btns img {
   width: 20px;
   height: 20px;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .card-btns button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.main-content--announcements,
+.main-content--trending {
+  padding: 2rem;
+}
+
+.announcements-article {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.profile-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.profile-card--user {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.profile-card--project {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: gray;
 }
